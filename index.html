@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Color Scheme Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://fav.farm/%F0%9F%8E%A8">
+    </head>
+    <body>
+        <main>
+            <div class="header">
+                <input type="color">
+                <select>
+                    <option>Monochrome</option>
+                    <option>Monochrome-dark</option>
+                    <option>Monochrome-light</option>
+                    <option>Analogic</option>
+                    <option>Complement</option>
+                    <option>Analogic-complement</option>
+                    <option>Triad</option>
+                </select>
+            </div>
+            <button id="get-colors">Get color scheme</button>
+            <div class="colors-container" id="colors-container" >
+                <!-- Data from api goes here! -->
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

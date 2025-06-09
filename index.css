@@ -1,0 +1,91 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    padding: 2em 0;
+    background-color: #1F2937;
+}
+
+.header {
+    margin: 0 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header input {
+    width: 20%;
+    margin: auto;
+    block-size: 4em;
+}
+
+.header select, option{
+    width: 65%;
+    padding: 1em;
+    background: transparent;
+    color: #D5D4D8;
+}
+
+
+button {
+    display: block;
+    width: 90%;
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #3D4B60;
+    margin: 1em auto;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.colors-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-slot {
+    display: flex;
+    justify-content: space-between;
+    cursor: cell;
+}
+
+.colors {
+    width: 70%;
+}
+
+.hex-codes {
+    width: 30%;
+    font-size: 0.8em;
+    text-align: center;
+    color: #D5D4D8;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
+
+}
