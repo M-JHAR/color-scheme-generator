@@ -18,13 +18,13 @@ getColors.addEventListener('click', async() => {
                 </div>
             `
         )
-    }).join('');
-
-        
+    }).join(''); 
 });
 
 document.addEventListener('click', (e) => {
-    if(e.target.dataset.hexCode === null) return;
-    navigator.clipboard.writeText(e.target.dataset.hexCode);
+    if(e.target.dataset.hexCode)  {
+        navigator.clipboard.writeText(e.target.dataset.hexCode);
+    }
+    
 } )
 
